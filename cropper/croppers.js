@@ -102,16 +102,8 @@ layui.config({
                                 //上传成功之后的回调，done是页面中处理成功的done
 
                                 console.log(result)
-                                    layer.closeAll('page');
-                                    return done(result);
-                                // if(result.code > 0){
-                                //     layer.msg(result.msg,{icon: 1});
-                                //     layer.closeAll('page');
-                                //     return done(result.data.src);
-                                // }else{
-                                //     layer.alert(result.msg,{icon: 2});
-                                // }
-
+                                layer.closeAll('page');
+                                return done(result);
                             }
                         });
                     });
